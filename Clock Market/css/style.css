@@ -1,0 +1,650 @@
+/* playfair-display-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Playfair Display Regular'), local('PlayfairDisplay-Regular'),
+         url('../fonts/playfair-display-v15-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/playfair-display-v15-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+/* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Roboto Medium'), local('Roboto-Medium'),
+         url('../fonts/roboto-v20-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+  /* prata-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Prata';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Prata Regular'), local('Prata-Regular'),
+         url('../fonts/prata-v10-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/prata-v10-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  
+
+html{
+    box-sizing: border-box;
+}
+*, *::before, *::after{
+    box-sizing: inherit
+}
+
+body{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: normal;
+    color: #1B1A17;;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    max-width: 1366px;
+    margin: 0 auto; 
+}
+
+
+/* Header Styles Start */
+
+
+
+.header__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding-top: 35px;
+    margin-left: 55px;
+}
+
+.header__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header__item{
+    margin-right: 23px;
+}
+
+.header__item:hover{
+    opacity: .75;
+}
+
+.header__item:last-child{
+    padding-right: 55px;
+}
+
+/* Header Styles End */
+
+/* Collection Styles Start */
+
+.social__media{
+    padding-left: 56px;
+    padding-top: 295px;
+}
+
+.social__item{
+    
+    padding-bottom: 13px;
+}
+
+.social__item:nth-child(2){
+    padding-left: 3px;
+}
+
+.social__item:hover, .social__item:focus {
+    opacity: 0.75;
+}
+
+.collection__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 47px;
+    
+}
+
+.collection{
+    padding-top: 179px;
+    padding-left: 112px;
+    margin-right: 114px;
+}
+
+.collection__title{
+    font-family: 'Playfair Display';
+    font-size: 45px;
+    line-height: 60px;
+    color: #1B1A17;
+    margin-bottom: 16px;
+    z-index: 24;
+}
+
+.collection__sub-title{
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 39px;
+
+    color: #1B1A17; 
+}
+
+.collection__desc{    
+    max-width: 258px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    margin-bottom: 64px;
+}
+
+.catalog__see-link{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: #444240;
+    padding: 26px 38px;
+    color: #FFFFFF;
+    border: none;
+}
+
+.catalog__see-link:hover, .catalog__see-link:focus{
+    background-color: #292725;
+}
+
+.watch__main{
+    position: relative;
+    width: 500px;
+    height: 800px;
+}
+
+.watch__rubles{
+    position: absolute;
+    top: 75px;
+    left: -82px;
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+    padding-top: 4px;
+    padding-right: 72px;
+    
+    background: url(../img/svg/ruble.svg) no-repeat center center;
+
+}
+
+.watch__rubles::after{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: 80px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+}
+
+.watch__gradient{
+    position: absolute;
+    height: 950px;
+    width: 500px;
+    top: -56px;
+    left: -170px;
+    background: url(../img/Ellipse.png);
+    z-index: -1;
+    
+}
+
+.watch__main-pic{
+    position: absolute;
+    top: -60px;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
+    
+    
+}
+
+.watch__diameter{
+    position: absolute;
+    bottom: 200px;
+    right: -75px;
+
+    font-family: Prata;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.watch__diameter::before{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -70px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+}
+
+/* Collection Styles End */
+
+/* Popular Styles Start */
+
+.pop__watch{
+    
+    margin-bottom: 77px;
+}
+
+.pop__watch-title{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    line-height: 43px;  
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.pop__watch-cards{
+    max-width: 1366px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-end;
+    
+}
+
+.pop__watch-card{
+ position: relative;
+}
+
+.pop__watch-card-1{
+    width: 370px;
+    height: 467px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    
+}
+
+.pop__watch-card-2{
+    width: 760px;
+    height: 478px;
+    margin-bottom: 26px;
+}
+
+.pop__watch-card-3{
+    width: 556px;
+    height: 220px;
+    margin-right: 40px;
+    
+}
+
+.pop__watch-card-4{
+    width: 565px;
+    height: 226px;
+}
+
+.pop__watch-card-title{
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    font-family: 'Playfair Display';
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.pop__watch-card-title-bg{
+    position: absolute;
+    top: 55px;
+    left: 55px;
+    font-size: 18px;
+    line-height: 0%;
+    margin-right: 118px;
+      
+}
+
+.pop__watch-card-price{
+    position: absolute;
+    top: 65px;
+    left: 40px;
+    font-family: Prata;
+    font-size: 12px;
+    line-height: 16px;
+    padding-right: 58px;
+    padding-top: 2px;
+    background: url(../img/svg/ruble-small.svg) no-repeat center center;
+    color: rgba(27, 26, 23, 0.82);
+}
+
+.pop__watch-card-price-bg{
+    position: absolute;
+    top: 86px;
+    left: 55px;
+    font-size: 16px;
+    line-height: 22px;
+    padding-right: 70px;
+    padding-top: 5px;
+    
+    background: url(../img/svg/ruble.svg) no-repeat center center;
+}
+
+.pop__watch-card-1 .pop__watch-pic{
+    position: absolute;
+    top: 84px;
+    left: 41px;
+    background: url(../img/svg/bg-ellipse.png) no-repeat right top;
+}
+
+.pop__watch-card-2 .pop__watch-pic{
+    position: absolute;
+    top: 6px;
+    left: 230px;
+    background: url(../img/svg/bg-ellipse-2.png) no-repeat right top;
+}
+
+.pop__watch-card-3 .pop__watch-pic{
+    position: absolute;
+    top: 0px;
+    left: 209px;
+    background: url(../img/svg/bg-ellipse-3.png) no-repeat center center;
+}
+
+.pop__watch-card-4 .pop__watch-pic{
+    position: absolute;
+    top: 0px;
+    left: 278px;
+    background: url(../img/svg/bg-ellipse-4.png) no-repeat center top;
+}
+
+.pop__watch-link{
+    font-size: 16px;
+    line-height: 21px;
+    text-decoration: none;
+    color: #1B1A17;
+    position: absolute;
+    bottom: 40px;
+    left: 88px;
+
+}
+
+.pop__watch-card-2 .pop__watch-link{
+    position: absolute;
+    bottom: 48px;
+    left: 121px;
+
+}
+
+.pop__watch-link::before {
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -47px;
+    width: 30px;
+    height: 1px;
+    background-color: #8B8371;
+}
+
+.pop__watch-card-2 .pop__watch-link::before{
+    content: "";
+    position: absolute;
+    top: 9px;
+    left: -67px;
+    width: 50px;
+    height: 1px;
+    background-color: #8B8371;
+}
+
+
+.pop__watch-link:hover, .pop__watch-link:focus {
+    opacity: .75;
+}
+
+/* Popular Styles End */
+
+/* Banner Styles Start */
+
+.banner{
+    height: 519px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 70px;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.banner__pic{
+    padding-left: 177px;
+    padding-top: 52px;
+    
+}
+
+.banner__title{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    line-height: 43px;  
+    text-align: left;
+    margin-bottom: 38px;
+    padding-top: 140px;
+}
+
+.banner__desc{
+    max-width: 376px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 45px;
+
+    color: #444240;
+
+}
+
+.banner__see-link{
+    background: #D4B098;
+}
+
+.banner__see-link:hover, .banner__see-link:focus, .banner__see-link:active{
+    background: #DDA987;
+}
+
+/* Banner Styles End */
+
+/* Subscribe Styles Start */
+
+.subscribe{
+    max-width: 1171px;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    margin: 0 auto;
+    margin-bottom: 80px;
+}
+
+.subscribe__info{
+    margin-top: 140px;
+    margin-right: 71px;
+}
+
+.subscribe__info-title{
+    font-family: 'Playfair Display';
+    font-size: 32px;
+    line-height: 43px;
+    color: #1B1A17;
+    margin-bottom: 40px;
+
+}
+
+.subscribe__info-desc{
+    max-width: 376px;
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 27px;
+    color: #444240;
+    margin-bottom: 50px;
+}
+
+.important__email{
+    font-weight: bolder;
+}
+
+.subscribe__info-icons{
+    display: flex;
+    align-items: flex-start;
+    
+}
+
+.subscribe__info-icon{
+    padding-right: 18px;
+}
+
+.subscribe__pics{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 222px 347px;
+    grid-template-rows: 209px 204px;
+
+    
+
+}
+
+.subscribe__pic-1{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.subscribe__pic-2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.subscribe__pic-3{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+    
+    
+/* Subscribe Styles End */
+
+/* Footer Styles Start */
+
+.footer{
+    
+    background: #444240;
+    
+    font-family: Roboto;
+
+    font-size: 12px;
+    line-height: 14px;
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.75);
+    
+}
+
+.footer__all{
+    
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    padding: 67px 182px;
+}
+
+.footer__contacts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 25%;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+
+.footer__logo{
+    margin-bottom: 23px;
+}
+
+.footer__contacts-phonenumber{
+    margin-bottom: 15px;
+}
+
+.footer__nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 75%;
+}
+
+.footer__menu-item{
+    margin-bottom: 15px;
+}
+
+.footer__menu-title{
+    
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    margin-bottom: 33px;
+}
+
+.footer__menu-link{
+    font-size: 12px;
+    line-height: 14px;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__menu-link:hover, .footer__menu-link:focus, .footer__menu-link:active{
+    color: #fff;
+}
+
+/* Footer Styles End */
